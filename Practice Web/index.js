@@ -71,6 +71,17 @@ function becomeMember(){
 
     var obj1 = document.getElementById("selected");
     obj1.style.width='330px'
+
+    function showReview(){
+        document.querySelector(".review-container").style.opacity="100%";
+        document.querySelector(".product-img").style.filter="brightness(0.4)";
+    }
+
+    function hideReview(){
+        document.querySelector(".review-container").style.opacity="0%";
+        document.querySelector(".product-img").style.filter="brightness(1)";
+    }
+    
     
 
 
