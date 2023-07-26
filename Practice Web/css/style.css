@@ -2,22 +2,30 @@
         font-family: Arial, Helvetica, sans-serif;
         margin:10px;
     }
+        .body-dark{
+            background-color: black;
+            color: white;
+        }
     /* -------------- navigation bar style -------------- */
     header{
         display: flex;
         padding: 0 5%;
         justify-content: space-between;
+        background-color:white;
         background-color: #f9f7f3;    
         box-shadow: 0px 10px 25px #00000043;
-        height: 60px;
+        height: 70px;
+  }
+    header img{
+        padding-top: 12px;
   }
        .main-nav {
-           padding: 7px;
+           padding-bottom: 7px;
            /* border: #2b2343 solid 2px; */
            margin: 7px; 
            display: flex;
            column-gap: 40px;
-           padding-top: 18px;
+           padding-top: 9px;
        } 
  
        .main-nav a{
@@ -25,6 +33,7 @@
         color: #3d414a;
         text-decoration: none;
         transition-duration: 0.3s;
+        padding-top: 5px;
        }
        .main-nav a:hover{
         color: red;
@@ -32,7 +41,12 @@
        #selected{
         color: blue;
        }
+       header svg:hover{
+        cursor: pointer;
+       }
 
+       #moon-icon{transform: translateY(-5px);}
+       #sun-icon{transform: translateY(-5px);}
     /* -------------- intro section -------------- */
          input{
         margin-bottom: 2px;
@@ -112,6 +126,7 @@
 
        .product-card{
          background-color:#e9e6f0 ;   
+         color: #1e1e1e;
          border-radius: 20px;
          width: 250px;
          margin: auto;
@@ -125,6 +140,12 @@
             color: white;
             z-index: 1;
             transition-duration: 0.3s;
+       }
+       .hover-img{
+        filter: brightness(0.4);
+       }
+       .hover-review{
+        opacity: 100%;
        }
        .product-img {
         border-radius: 20px 20px 0 0;

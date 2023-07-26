@@ -73,15 +73,30 @@ function becomeMember(){
     obj1.style.width='330px'
 
     function showReview(){
-        document.querySelector(".review-container").style.opacity="100%";
-        document.querySelector(".product-img").style.filter="brightness(0.4)";
+        // document.querySelector(".review-container").style.opacity="100%";
+        // document.querySelector(".product-img").style.filter="brightness(0.4)";
+        document.querySelector(".review-container").classList.toggle("hover-review");
+        document.querySelector(".product-img").classList.toggle("hover-img");
     }
 
     function hideReview(){
-        document.querySelector(".review-container").style.opacity="0%";
-        document.querySelector(".product-img").style.filter="brightness(1)";
+        document.querySelector(".review-container").classList.toggle("hover-review");
+        document.querySelector(".product-img").classList.toggle("hover-img");
+    }
+
+    function darkMode(){
+        document.getElementById("sun-icon").style.display="none";
+        document.getElementById("moon-icon").style.display="block"
+        document.getElementsByTagName("body")[0].classList.toggle("body-dark");
+        document.querySelector("#intro p").style.color="#EEEFF1"
     }
     
+    function lightMode(){
+        document.getElementById("sun-icon").style.display="block";
+        document.getElementById("moon-icon").style.display="none"
+        document.getElementsByTagName("body")[0].classList.toggle("body-dark");
+        document.querySelector("#intro p").style.color="#EEEFF1"
+    }
     
 
 
